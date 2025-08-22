@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Times New Roman', serif;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #333333 50%, #1a1a1a 75%, #000000 100%);
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  padding: 60px 0 0 0;
+  text-align: center;
+}
+
+.company-name {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #ffffff, #cccccc, #999999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.main-content {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #cccccc;
+  max-width: 800px;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.footer {
+  padding: 0 0 60px 0;
+  text-align: center;
+}
+
+.contact-email {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #999999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.contact-email:hover {
+  color: #ffffff;
+}
+
+.background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+  }
+  
+  .coming-soon {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 0 20px;
+  }
+}
