@@ -45,7 +45,7 @@ export default function AnimatedContent() {
 
       <main className="main-content">
         <h2 className="coming-soon">Coming Soon</h2>
-        <p className="subtitle">Highly Purified Graphite Up to 99.99%</p>
+        <p className="subtitle">Highly Purified Graphite</p>
       </main>
 
       <footer className="footer">
