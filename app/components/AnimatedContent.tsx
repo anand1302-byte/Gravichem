@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import anime from 'animejs'
+import Image from 'next/image'
 
 export default function AnimatedContent() {
   useEffect(() => {
@@ -12,9 +13,10 @@ export default function AnimatedContent() {
 
     timeline
       .add({
-        targets: '.company-name',
+        targets: '.company-logo',
         opacity: [0, 1],
         translateY: [-30, 0],
+        scale: [0.9, 1],
         delay: 500
       })
       .add({
@@ -40,7 +42,14 @@ export default function AnimatedContent() {
   return (
     <div className="container">
       <header className="header">
-        <h1 className="company-name">Gravichem</h1>
+        <Image 
+          src="/image/Raw File-02.png" 
+          alt="Gravichem Logo" 
+          width={300} 
+          height={300} 
+          className="company-logo"
+          priority
+        />
       </header>
 
       <main className="main-content">
